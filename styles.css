@@ -1,0 +1,36 @@
+.outer {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+#controls {
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  opacity: 0.90;
+  z-index: 1000;
+  overflow-y:scroll;
+}
+
+#totals {
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  z-index: 1000;
+  /* Fade out while not hovering */
+  opacity: 0.75;
+  transition: opacity 500ms 1s;
+}
+
+
+#totals:hover {
+  /* Fade in while hovering */
+  opacity: 0.90;
+  transition-delay: 0;
+}
+
