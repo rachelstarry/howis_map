@@ -111,9 +111,9 @@ ui <- navbarPage("History of Bryn Mawr Women in Science - Interactive Map and Da
                                              textOutput("current_n")
                                        )
                                        ),
-                         absolutePanel(id = "controls", fixed = FALSE, draggable = TRUE, 
+                         absolutePanel(id = "controls", fixed = TRUE, draggable = TRUE, 
                                        top = 120, left = "auto", right = 20, bottom = "auto",
-                                       width = "auto", height = "auto",
+                                       width = "auto", height = "60%",
                                        
                                        h2("Map & Data Options"),
                                        radioButtons("major_career", label = h4("Filter by scientific majors vs. careers"), 
